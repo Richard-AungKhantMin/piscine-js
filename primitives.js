@@ -1,7 +1,7 @@
-let a = "Richie"
-let b = 2
-let c = true
-let undef;
+const a = "Richie"
+const b = 2
+const c = true
+const undef = undefined;
 
 console.log(a)
 console.log(b)
