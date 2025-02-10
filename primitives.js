@@ -1,9 +1,4 @@
-const a = "Richie"
-const b = 2
-const c = true
+const str = "Richie";
+const num = 2;
+const bool = true;
 const undef = undefined;
-
-console.log(a)
-console.log(b)
-console.log(c)
-console.log(undef)
