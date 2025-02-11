@@ -7,5 +7,5 @@ function last(ray){
 }
 
 function kiss(ray){
-    return first(ray)+last(ray)
+    return [last(ray), first(ray)]
 }
