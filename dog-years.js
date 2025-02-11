@@ -38,5 +38,5 @@ function dogYears(planet, ageInSec){
     }
 
     ans *= 7
-    return String(ans.toFixed(2))
+    return parseFloat(ans.toFixed(2))
 }
