@@ -1,6 +1,6 @@
 function multiply(a, b){
     let ans = 0
-    const sign = false
+    let sign = false
     
        if (isPositive1(a) && !isPositive1(b)){
         sign = true
