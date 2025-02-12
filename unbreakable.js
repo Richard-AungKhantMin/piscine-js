@@ -24,7 +24,7 @@ function join(a, s){
     let b = ""
     for (let i = 0; i < a.length; i++){
         if (i===0){
-            b = a[0]
+            b = a[i]
         }else{
             b = b + s + a[i]
         }
