@@ -39,14 +39,17 @@ function modulo(a, b){
 
     a = Math.abs(a)
     b = Math.abs(b)
+    const sign = (a < 0)
 
     while (a >= b){
         a = a - b
     }
 
-  
+  if (sign){
+return -a
+  }
 
-    return a
+    return a 
 }
 
 function print(a){
