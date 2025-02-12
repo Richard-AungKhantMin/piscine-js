@@ -1,21 +1,10 @@
 function multiply(a, b){
     let ans = 0
-    let sign = false
-    
-       if (isPositive1(a) && !isPositive1(b)){
-        sign = true
-        b = -b
-       }
 
-       if (!isPositive1(a) && isPositive1(b)) {
-        sign = true
-        a = -a
-       }
-       
-       if (!isPositive1(a) && !isPositive1(b)) {
-        a = -a
-        b = -b
-       }
+    const sign = (a < 0) !== (b < 0)
+    a = Math.abs(a)
+    b = Math.abs(b)
+    
 
     for (let i = 0; i < b; i++){
         ans += a
@@ -30,72 +19,37 @@ function multiply(a, b){
 
 function divide(a, b){
     let ans = 0
-    let sign = false
-    
-    if (isPositive1(a) && !isPositive1(b)){
-     sign = true
-     b = -b
-    }
-
-    if (!isPositive1(a) && isPositive1(b)) {
-     sign = true
-     a = -a
-    }
-    
-    if (!isPositive1(a) && !isPositive1(b)) {
-     a = -a
-     b = -b
-    }
-    
-    if (a < b || b === 0){
-        return 0
-    }
+    const sign = (a < 0) !== (b < 0)
+    a = Math.abs(a)
+    b = Math.abs(b)
 
     while (a >= b){
         a = a - b
         ans++
     }
 
-
-
     if (sign) {
         return -ans
     }
+
     return ans
 }
 
 function modulo(a, b){
     
-    if (isPositive1(a) && !isPositive1(b)){
-     b = -b
-    }
-
-    if (!isPositive1(a) && isPositive1(b)) {
-     a = -a
-    }
-    
-    if (!isPositive1(a) && !isPositive1(b)) {
-     a = -a
-     b = -b
-    }
-    
-    if (a < b){
-        return a
-    }
-
-    if (b === 0){
-        return a
-    }
+    const sign = (a < 0) !== (b < 0)
+    a = Math.abs(a)
+    b = Math.abs(b)
 
     while (a >= b){
         a = a - b
     }
 
-    return a
-}
+    if (sign) {
+        return -a
+    }
 
-function isPositive1(a){
- return (a > 0)
+    return a
 }
 
 function print(a){
@@ -103,4 +57,5 @@ function print(a){
 }
 
 print(divide(-150,-30))
+print(modulo(-151,-2))
 
