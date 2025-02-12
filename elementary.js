@@ -1,0 +1,52 @@
+function multiply(a, b){
+    let ans = 0
+    const sign = false
+    
+       if (isPositive1(a) && !isPositive1(b)){
+        sign = true
+        b = -b
+       }
+
+       if (!isPositive1(a) && isPositive1(b)) {
+        sign = true
+        a = -a
+       }
+       
+       if (!isPositive1(a) && !isPositive1(b)) {
+        a = -a
+        b = -b
+       }
+
+    for (i = 0; i < b; i++){
+        ans += a
+    }
+
+    if (sign) {
+        return -ans
+    }
+
+    return ans
+}
+
+function divide(a, b){
+    let ans = 0
+    
+    while (a > 0){
+        a = a - b
+        ans++
+    }
+    return ans
+}
+
+function modulo(a, b){
+    while (a > 0){
+        a = a - b
+    }
+    return a
+}
+
+function isPositive1(a){
+ return (a > 0)
+}
+
+
