@@ -15,7 +15,7 @@ function indexOf(input, value, index){
 
 function lastIndexOf(input, value, index){
     if (index === undefined){
-        index = 0
+        index = input.length-1
     }
 
     for (let i = index; i >= 0; i--){
