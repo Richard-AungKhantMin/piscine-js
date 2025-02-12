@@ -1,6 +1,6 @@
 function slice(input, start, end){
     if (end === undefined){
-        end === input.length
+        end = input.length
     }
     let isString = false
     if (typeof input === 'string'){
@@ -19,3 +19,5 @@ function slice(input, start, end){
     }
     return ans
 }
+
+console.log((slice('abcdef',2)))
