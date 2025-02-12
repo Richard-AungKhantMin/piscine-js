@@ -65,9 +65,32 @@ function divide(a, b){
 }
 
 function modulo(a, b){
+    
+    if (isPositive1(a) && !isPositive1(b)){
+     b = -b
+    }
+
+    if (!isPositive1(a) && isPositive1(b)) {
+     a = -a
+    }
+    
+    if (!isPositive1(a) && !isPositive1(b)) {
+     a = -a
+     b = -b
+    }
+    
+    if (a < b){
+        return 0
+    }
+
+    if (b === 0){
+        return a
+    }
+
     while (a >= b){
         a = a - b
     }
+
     return a
 }
 
@@ -79,5 +102,5 @@ function print(a){
     console.log(a)
 }
 
-print(divide(15,2))
+print(divide(-150,-30))
 
