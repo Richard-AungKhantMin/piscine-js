@@ -13,7 +13,7 @@ function split(a, s){
         }
     }
 
-    if (current) {
+    if (current.length > 0) {
         b.push(current);
     }
 
@@ -32,5 +32,3 @@ function join(a, s){
 
     return b
 }
-
-console.log(split("abc", ""))
