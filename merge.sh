@@ -6,6 +6,9 @@ git checkout master
  echo -e "\033[36mGit Status\033[0m" 
 git status
 
+ echo -e "\033[36mPulling the history\033[0m" 
+git pull
+
  echo -e "\033[36mEntering the main branch\033[0m" 
 git checkout main
 git branch
