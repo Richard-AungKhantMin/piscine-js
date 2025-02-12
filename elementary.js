@@ -17,7 +17,7 @@ function multiply(a, b){
         b = -b
        }
 
-    for (i = 0; i < b; i++){
+    for (let i = 0; i < b; i++){
         ans += a
     }
 
