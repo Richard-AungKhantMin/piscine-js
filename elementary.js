@@ -80,7 +80,7 @@ function modulo(a, b){
     }
     
     if (a < b){
-        return 0
+        return a
     }
 
     if (b === 0){
