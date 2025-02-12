@@ -2,9 +2,9 @@ function slice(input, start, end){
     if (end === undefined){
         end === input.length
     }
-
+    let isString = false
     if (typeof input === 'string'){
-       var isString = true
+     isString = true
         input = {...input}
     }
 
