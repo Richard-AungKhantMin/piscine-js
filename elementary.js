@@ -37,9 +37,10 @@ function divide(a, b){
 
 function modulo(a, b){
 
+    const sign = (a < 0)
     a = Math.abs(a)
     b = Math.abs(b)
-    const sign = (a < 0)
+
 
     while (a >= b){
         a = a - b
@@ -56,5 +57,5 @@ function print(a){
     console.log(a)
 }
 
-print(modulo(123,-22))
+print(modulo(-123,22))
 
