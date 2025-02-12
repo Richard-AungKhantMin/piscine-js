@@ -49,4 +49,7 @@ function isPositive1(a){
  return (a > 0)
 }
 
+function print(a){
+    console.log(a)
+}
 
