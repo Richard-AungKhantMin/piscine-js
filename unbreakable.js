@@ -13,9 +13,9 @@ function split(a, s){
         }
     }
 
-    if (current.length > 0) {
+ 
         b.push(current);
-    }
+    
 
     return b
 }
@@ -33,4 +33,4 @@ function join(a, s){
     return b
 }
 
-console.log(join(['ggg', 'ddd', 'b'], ' - '))
+console.log(split('ee,ff,g,', ','))
