@@ -20,10 +20,14 @@ function split(a, s){
     return b
 }
 
-function join(a){
+function join(a, s){
     let b = ""
     for (let i = 0; i < a.length; i++){
-        b += a[i]
+        if (i===0){
+            b = a[0]
+        }else{
+            b = b + s + a[i]
+        }
     }
 
     return b
