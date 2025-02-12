@@ -31,9 +31,17 @@ function multiply(a, b){
 function divide(a, b){
     let ans = 0
     
+    if (a < b){
+        return 0
+    }
+
     while (a > 0){
         a = a - b
         ans++
+    }
+
+    if (a < 0){
+        ans--
     }
     return ans
 }
@@ -52,4 +60,6 @@ function isPositive1(a){
 function print(a){
     console.log(a)
 }
+
+print(divide(15,2))
 
