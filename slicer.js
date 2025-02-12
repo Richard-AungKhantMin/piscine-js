@@ -5,7 +5,7 @@ function slice(input, start, end){
     let isString = false
     if (typeof input === 'string'){
      isString = true
-        input = {...input}
+        input = [...input]
     }
 
     let ans = []
