@@ -32,3 +32,5 @@ function join(a, s){
 
     return b
 }
+
+console.log(join(['ggg', 'ddd', 'b'], ' - '))
