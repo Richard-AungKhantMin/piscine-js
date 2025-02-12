@@ -1,11 +1,20 @@
 function split(a, s){
-    a = [...a]
+    let b = [];
+    let current = '';
 
-    let b = []
-    for (let i = 0; i < a.length; i++){
-        if (a[i] !== s){
-            b.push(a[i])
+    for (let i = 0; i < a.length; i++) {
+    
+        if (a.substring(i, i + s.length) === s) {
+            b.push(current);
+            current = '';
+            i += s.length - 1;  
+        } else {
+            current += a[i];
         }
+    }
+
+    if (current) {
+        b.push(current);
     }
 
     return b
