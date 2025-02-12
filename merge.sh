@@ -3,7 +3,7 @@
  echo -e "\033[36mCommitting the changes before changing the branch.\033[0m" 
 git pull origin main
 git add .
-git commit -m "Updated the README file with new instructions"
+git commit -m "committing changes before changing branch"
 git push origin main
 
  echo -e "\033[36mEntering the master branch\033[0m" 
@@ -26,6 +26,6 @@ git merge master --allow-unrelated-histories
  echo -e "\033[36mCommitting the changes\033[0m" 
 git pull origin main
 git add .
-git commit -m "Updated the README file with new instructions"
+git commit -m "merged the files with master branch"
 git push origin main
 
