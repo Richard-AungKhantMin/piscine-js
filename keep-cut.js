@@ -18,9 +18,9 @@ function keepLast(a){
     return a.slice(-2)
 }
 
-function keepFristLast(a){
+function keepFirstLast(a){
     return keepFirst(a)+keepLast(a)
 }
 
 
-console.log(keepLast("abmmmef"))
+console.log(keepFirstLast("abcdef"))
