@@ -1,7 +1,7 @@
 function isPositive(a){
 
     //learning if conditionals
-    if (a >= 0){
+    if (a > 0){
         return true
     } else{
         return false
@@ -9,6 +9,10 @@ function isPositive(a){
 }
 
 function abs(a){
+if (a === 0) {
+    return 0
+}
+
     if (!isPositive(a)){
         return -a
     }
