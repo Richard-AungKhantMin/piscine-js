@@ -16,3 +16,10 @@ git branch
  echo -e "\033[36mMerging the branches\033[0m" 
 # Run git merge with --allow-unrelated-histories
 git merge master --allow-unrelated-histories
+
+ echo -e "\033[36mCommitting the changes\033[0m" 
+git pull origin main
+git add .
+git commit -m "Updated the README file with new instructions"
+git push origin main
+
