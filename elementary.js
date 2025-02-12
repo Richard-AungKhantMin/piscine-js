@@ -51,14 +51,12 @@ function divide(a, b){
         return 0
     }
 
-    while (a > 0){
+    while (a >= b){
         a = a - b
         ans++
     }
 
-    if (a < 0){
-        ans--
-    }
+
 
     if (sign) {
         return -ans
@@ -67,7 +65,7 @@ function divide(a, b){
 }
 
 function modulo(a, b){
-    while (a > 0){
+    while (a >= b){
         a = a - b
     }
     return a
