@@ -19,13 +19,11 @@ function keepLast(a){
 }
 
 function keepFirstLast(a){
-if (a.length === 2){
-    return keepFirst(a)
-}
-
-if (a.length === 3){
+if (a.length <= 3){
     return a
 }
+
+
     return keepFirst(a)+keepLast(a)
 }
 
