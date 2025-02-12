@@ -1,5 +1,11 @@
 #!/bin/bash
 
+ echo -e "\033[36mCommitting the changes before changing the branch.\033[0m" 
+git pull origin main
+git add .
+git commit -m "Updated the README file with new instructions"
+git push origin main
+
  echo -e "\033[36mEntering the master branch\033[0m" 
 git checkout master
 
