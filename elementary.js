@@ -47,7 +47,7 @@ function divide(a, b){
      b = -b
     }
     
-    if (a < b){
+    if (a < b || b === 0){
         return 0
     }
 
@@ -79,5 +79,5 @@ function print(a){
     console.log(a)
 }
 
-print(divide(15,0))
+print(divide(15,2))
 
