@@ -30,8 +30,24 @@ function multiply(a, b){
 
 function divide(a, b){
     let ans = 0
+    let sign = false
     
-    if (a < b || b <= 0){
+    if (isPositive1(a) && !isPositive1(b)){
+     sign = true
+     b = -b
+    }
+
+    if (!isPositive1(a) && isPositive1(b)) {
+     sign = true
+     a = -a
+    }
+    
+    if (!isPositive1(a) && !isPositive1(b)) {
+     a = -a
+     b = -b
+    }
+    
+    if (a < b){
         return 0
     }
 
@@ -42,6 +58,10 @@ function divide(a, b){
 
     if (a < 0){
         ans--
+    }
+
+    if (sign) {
+        return -ans
     }
     return ans
 }
