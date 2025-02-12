@@ -10,6 +10,10 @@ function slice(input, start, end){
 
     let ans = []
 
+    if (start < 0) {
+        start = input.length+start
+    }
+
     for (let i = start; i < end; i++ ){
         ans.push(input[i])
     }
@@ -20,4 +24,4 @@ function slice(input, start, end){
     return ans
 }
 
-console.log((slice('abcdef',2)))
+console.log((slice('abcdef',-2)))
