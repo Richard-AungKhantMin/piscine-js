@@ -7,3 +7,5 @@ function reverse(a){
 
     return b
 }
+
+console.log(reverse([1,2,3,4,5]))
