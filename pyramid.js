@@ -12,6 +12,7 @@ for (let i = 1; i <= n; i++){
 }
 
 return ans.slice(0, -1)
+// no new line in the end. Really really annoying to wait for 3min
 }
 
 //1
