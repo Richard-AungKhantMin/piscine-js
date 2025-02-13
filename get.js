@@ -1,5 +1,3 @@
-
-
 function get(src, path){
 
  
