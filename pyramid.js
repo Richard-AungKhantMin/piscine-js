@@ -11,7 +11,7 @@ for (let i = 1; i <= n; i++){
 
 }
 
-return ans(0, -1)
+return ans.slice(0, -1)
 }
 
 //1
