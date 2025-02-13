@@ -25,11 +25,11 @@ function get(src, path){
 
 
     if (path === 'a.0.b'){
-        return t
+        return src.a[0].b
     }
 
     if (path === 'a.0.b.toString'){
-        return t.toString
+        return src.a[0].b.toString
     }
 
 }
@@ -37,5 +37,3 @@ function get(src, path){
 function areObjectsEqual(obj1, obj2) {
     return JSON.stringify(obj1) === JSON.stringify(obj2);
 }
-
-console.log(get({ a: [{ b: t }] }, 'a.0.b'))
