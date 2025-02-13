@@ -1,4 +1,4 @@
-const t = 'test';
+
 
 function get(src, path){
 
