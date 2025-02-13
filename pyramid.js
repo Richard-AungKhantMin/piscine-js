@@ -11,7 +11,7 @@ for (let i = 1; i <= n; i++){
 
 }
 
-return ans
+return ans(0, -1)
 }
 
 //1
@@ -19,5 +19,3 @@ return ans
 //3+2
 //4+3
 //i+i-1
-
-console.log(pyramid('a', 10))
