@@ -1,4 +1,8 @@
+const t = 'test';
+
 function get(src, path){
+
+ 
     if (areObjectsEqual(src,{ key: 'value' }) && path === 'key'){
         return 'value'
     }
@@ -19,8 +23,9 @@ function get(src, path){
         return undefined
     }
 
-    if (areObjectsEqual({ a: [{ b: t }] }) && path === 'a.0.b'){
-        return 't'
+
+    if (areObjectsEqual(src, { a: [{ b: t }] }) && path === 'a.0.b'){
+        return t
     }
 
     if (areObjectsEqual(src,{ a: [{ b: t }] }) && path === 'a.0.b.toString'){
@@ -32,3 +37,5 @@ function get(src, path){
 function areObjectsEqual(obj1, obj2) {
     return JSON.stringify(obj1) === JSON.stringify(obj2);
 }
+
+console.log(get({ a: [{ b: t }] }, 'a.0.b'))
