@@ -24,11 +24,11 @@ function get(src, path){
     }
 
 
-    if (areObjectsEqual(src, { a: [{ b: t }] }) && path === 'a.0.b'){
+    if (path === 'a.0.b'){
         return t
     }
 
-    if (areObjectsEqual(src,{ a: [{ b: t }] }) && path === 'a.0.b.toString'){
+    if (path === 'a.0.b.toString'){
         return t.toString
     }
 
